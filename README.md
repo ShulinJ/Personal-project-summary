@@ -1,7 +1,17 @@
-# AISP_NR:  2D AI-Noise Reduction for RAW Images
-![pipe](assets/pipe.png)
+# Two-stage multi-domain generative adversarial network for landscape image translation
+
 ## 介绍
-这是一个关于AI-ISP模块：Noise Reduction 的工程实现文档，针对目标camera如（sensor：IMX766）梳理AI降噪的实现流程，该项目包含：数据准备、模型设计、模型训练、模型压缩、模型推理等。请先确保安装该项目的依赖项，通过git clone下载该项目，然后在该项目的根目录下执行以下命令安装依赖项。
+TMGAN 是一种创新方法，旨在解决中国山水画、真实景观照片和油画这三种不同艺术领域之间图像到图像的转换任务。
+![TMGAN网络结构](TMGAN_out.jpg)
+### 项目出发点：
+一个多域风景迁移的网络框架研究，主要解决一些经典的图像翻译网络（当时）在风景风格迁移任务上无法很好传递风格，而最新的应用最广的图像翻译网络无法很好保留内容的问题。
+
+
+
+#### TMGAN网络结构
+![TMGAN网络结构](TMGAN.jpg)
+
+
 
 ```shell
 docker pull huiiji/ubuntu_torch1.13_python3.8:latest  #docker images约20G，请耐心下载
