@@ -1,8 +1,6 @@
 # 个人项目-简历
 
 
-
-
 ## 参与嘉楠Aicube软件的算法部分流程结构设计。 
 [Aicube相关介绍](https://kendryte-download.canaan-creative.com/developer/common/AI%20Cube%20V1.0%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97.pdf)
 
@@ -19,7 +17,7 @@
 
 ## ocr相关实际应用中的难点研究：相关资料在OCR-IDcard，OCR-License中。
 
-## 除此之外拥有模型在芯片上的部署经验，负责嘉楠科技K系列芯片上的OCR算法以及TTS算法的部署工作。
+## 此外有基础模型的芯片部署经验，负责嘉楠科技K系列芯片上的OCR算法以及TTS算法的部署工作。
 
 
 
