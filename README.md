@@ -11,11 +11,11 @@
   
 结合K230端侧的手势识别以及OCR算法与LLM，可以实现指读功能，并且可以根据所指文字进行续写、对话、问答、解释等。[Video](https://www.bilibili.com/video/BV1vV4y1t7Hf/?spm_id_from=333.999.0.0)[code](https://github.com/kendryte/k230_sdk/tree/main/src/reference/fancy_poc/finger_reader)
 
-## 嘉楠k510门显项目：异质人脸识别研究，相关资料在OMIT中，SCI论文一篇。
+## 嘉楠k510门显项目：异质人脸识别研究，相关资料在[OMIT](https://github.com/ShulinJ/Personal-project-summary/tree/main/OMIT)中。
 
-## 图像转换生成方向：SCI论文两篇，相关资料在Sunit和TMgan中。
+## 图像转换生成方向：SCI论文两篇，相关资料在[Sunit](https://github.com/ShulinJ/Personal-project-summary/tree/main/Sunit)和[TMgan](https://github.com/ShulinJ/Personal-project-summary/tree/main/TMgan)中。
 
-## ocr相关实际应用中的难点研究：相关资料在OCR-IDcard，OCR-License中。
+## ocr相关实际应用中的难点研究：相关资料在[OCR-IDcard](https://github.com/ShulinJ/Personal-project-summary/tree/main/OCR-IDcard)，[OCR-License](https://github.com/ShulinJ/Personal-project-summary/tree/main/OCR-License)中。
 
 ## 此外有基础模型的芯片部署经验，负责嘉楠科技K系列芯片上的OCR算法以及TTS算法的部署工作。
 
