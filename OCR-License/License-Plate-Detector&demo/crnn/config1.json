@@ -1,0 +1,73 @@
+{
+    "END_EPOCH": "200",
+    "PRINT_FREQ":"10",
+    "VAL_FREQ":"2000",
+    "SAVE_FREQ": "25000",
+    "task_type": "text_recognition",
+    "model_type": "CRNN",
+    "model_parameter": {
+        "imageH": 32,
+        "imageW": 220,
+        "keep_ratio": false,
+        "num_classes": 16,
+        "LSTM_nh": 256,
+        "leakyRelu": false,
+        "backbone": "mobilenetv3-small",
+        "pretrained": false,
+        "pre_model_path": "out1/best.pth"
+    },
+    "DICT_reading_method": "txt",
+    "CHAR_FILE": "D:\\JSL\\License-Plate-Detector-master\\crnn\\char_chepai.txt",
+    "DATASET_model": "lmdb",
+    "train_dataset": {
+        "datasetPath": "D:\\chepai_all"
+    },
+    "val_dataset": {
+        "datasetPath": "D:\\JSL\\LPRNet_Pytorch\\002-chepaishujuji\\chepai_LMDB\\test"
+    },
+    "train_dataloader": {
+        "batchSize": 256,
+        "shuffle": true,
+        "num_workers": 12
+    },
+    "test_dataloader": {
+        "batchSize": 32,
+        "shuffle": true,
+        "num_workers": 0
+    },
+    "optimizer": "adam",
+    "optimizer_parameter": {
+        "lr": 0.0005,
+        "betas": [
+            0.9,
+            0.999
+        ]
+    },
+    "lrscheduler": "MultiStepLR",
+    "lrscheduler_parameter": {
+        "LR_STEP": [100,150,180],
+        "LR_FACTOR": 0.3
+    },
+    "augment": true,
+    "data_augment": {
+        "ShearX": true,
+        "ShearY": true,
+        "TranslateX": true,
+        "Rotate": true,
+        "Brightness": true,
+        "Contrast": true,
+        "Solarize": true,
+        "Equalize": true,
+        "crop": true,
+        "blur": true,
+        "noise": true
+    },
+    "test_option": {
+        "image_path":"F:\\jishulin_data\\chepaishuju\\shuang_test",
+        "pre_model_path": "D:\\JSL\\License-Plate-Detector-master\\danchepai.pth",
+        "image_H": 64,
+        "image_W": 220,
+        "mean": 0.5,
+        "std": 0.5
+    }
+}
