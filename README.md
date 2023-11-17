@@ -1,7 +1,7 @@
 # 个人项目-简历
 
 
-## 参与嘉楠Aicube软件的算法部分流程结构设计。 
+## 嘉楠Aicube软件的算法部分流程结构设计和实现
 [Aicube相关介绍](https://kendryte-download.canaan-creative.com/developer/common/AI%20Cube%20V1.0%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97.pdf)
 
 ## 嘉楠k230 fancy_poc：（提出想法，结构设计，大模型Prompt调优，具体实现）
