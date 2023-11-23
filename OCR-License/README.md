@@ -7,7 +7,31 @@
 
 
 
-## 数据集生成效果（有各种干扰加入）：
+解决的相关问题：
+
+1.车牌数据集的不足。（各种车牌，双层，军车等各种颜色样式车牌）
+
+2.双层车牌的识别解决方案。
+
+
+
+## 车牌数据生成方法：
+
+1.生成一张车牌数据：
+
+![1](license_plate_generator\1.jpg)
+
+2.随机拿一张图片：并将上图给映射到图片中（透射变换）
+
+<img src="license_plate_generator\result4.jpg" alt="result4" style="zoom:50%;" />
+
+3.更改四个车牌坐标点的位置，并且再投射变换回来。
+
+![result](license_plate_generator\result.jpg)
+
+
+
+## 数据集生成效果（有各种干扰加入）：过程中的一些方法：
 **双层车牌结果**
 
 ![result1](result1.jpeg)
@@ -17,3 +41,26 @@
 **单层车牌结果**
 
 ![result3](result3.jpg)
+
+## 双车牌检测方法：
+
+在送入RNN层之前将特征进行一次分层，例如最终CNN提取的特征为2x512，将其上下分层然后转换为1x1024，最终就可以识别出双层车牌。
+
+最终实现的时候还训练了一个分类算法，可以自动区分单层车牌和双层车牌，然后送入不同的CRNN中进行识别。
+
+最终效果：
+
+
+
+![13](License-Plate-Detector&demo\demo\test\13.jpg)
+
+![京E_A5331_4](License-Plate-Detector&demo\demo\shuang\京E_A5331_4.jpg)
+
+京E_A5331
+
+![20](License-Plate-Detector&demo\demo\test\20.jpg)
+
+![陕A06725D_12](License-Plate-Detector&demo\demo\dan\陕A06725D_12.jpg)
+
+陕A06725D
+
