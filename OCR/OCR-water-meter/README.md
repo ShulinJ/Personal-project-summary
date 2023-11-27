@@ -44,7 +44,7 @@
 
 其中图像背景尽量选择和水表的字体所在背景相似，相似之外也要有一定的噪声存在，本次使用的背景如下，存放地址为 main\images：
 
-![background](readme_src\background.jpg)
+![background](readme_src/background.jpg)
 
 建议使用方式：
 
@@ -58,15 +58,15 @@
 
  生成结果：
 
-![I9Zr6AUCXx](readme_src\I9Zr6AUCXx.jpg)
+![I9Zr6AUCXx](readme_src/I9Zr6AUCXx.jpg)
 
 double：
 
-![img-result0](readme_src\img-result0.jpg)
+![img-result0](readme_src/img-result0.jpg)
 
 single：0-9的生成效果如下，词典设置为0，1，2，3，4，5，6，7，8，9
 
-![img-result1](readme_src\img-result1.jpg)
+![img-result1](readme_src/img-result1.jpg)
 
 对double number进行二次处理（使其更接近水表中的双字）：
 
@@ -76,17 +76,17 @@ python double_num_processing.py -f output\double
 
 二次处理后双字图片应为：
 
-![img-result2](C:\Users\jishulin\Desktop\新建文件夹 (8)\Personal-project-summary\OCR-water-meter\readme_src\img-result2.jpg)
+![img-result2](readme_src/img-result2.jpg)
 
 ### 2.对所需要的水表图像进行标定。
 
 随机拍摄一张水表图像：
 
-![img_0](readme_src\img_0.jpg)
+![img_0](readme_src/img_0.jpg)
 
 剪切出数字所在位置的表盘，转正，并且对图像进行灰度化：
 
-![img_1](readme_src\img_1.jpg)
+![img_1](readme_src/img_1.jpg)
 
 标定出水表中的每个数字的具体像素位置。如下图所示：
 
@@ -122,9 +122,9 @@ python double_num_processing.py -f output\double
 
 最终生成效果：
 
-![img3](readme_src\img3.jpg)
+![img3](readme_src/img3.jpg)
 
-![img_3](readme_src\img_3.jpg)
+![img_3](readme_src/img_3.jpg)
 
 使用lmdb_propress.py文件将数据集转为lmdb格式：
 
@@ -136,12 +136,12 @@ python lmdb_generator.py -i water_meter -o water_meter_lmdb
 
 运行结果如下所示：
 
-![img_4](readme_src\img_4.jpg)
+![img_4](readme_src/img_4.jpg)
 
 ### 5.结果：
 
-![img_1](readme_src\img_1.jpg)
+![img_1](readme_src/img_1.jpg)
 
 识别效果：
 
-![img_5](readme_src\img_5.jpg)
+![img_5](readme_src/img_5.jpg)
