@@ -19,15 +19,15 @@
 
 1.生成一张车牌数据：
 
-![1](license_plate_generator\1.jpg)
+![1](license_plate_generator/1.jpg)
 
 2.随机拿一张图片：并将上图给映射到图片中（透射变换）
 
-<img src="license_plate_generator\result4.jpg" alt="result4" style="zoom:50%;" />
+<img src="license_plate_generator/result4.jpg" alt="result4" style="zoom:50%;" />
 
 3.更改四个车牌坐标点的位置，并且再投射变换回来。
 
-![result](license_plate_generator\result.jpg)
+![result](license_plate_generator/result.jpg)
 
 
 
@@ -52,15 +52,15 @@
 
 
 
-![13](License-Plate-Detector&demo\demo\test\13.jpg)
+![13](License-Plate-Detector&demo/demo/test/13.jpg)
 
-![京E_A5331_4](License-Plate-Detector&demo\demo\shuang\京E_A5331_4.jpg)
+![京E_A5331_4](License-Plate-Detector&demo/demo/shuang/京E_A5331_4.jpg)
 
 京E_A5331
 
-![20](License-Plate-Detector&demo\demo\test\20.jpg)
+![20](License-Plate-Detector&demo/demo/test/20.jpg)
 
-![陕A06725D_12](License-Plate-Detector&demo\demo\dan\陕A06725D_12.jpg)
+![陕A06725D_12](License-Plate-Detector&demo/demo/dan/陕A06725D_12.jpg)
 
 陕A06725D
 
